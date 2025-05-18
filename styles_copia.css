@@ -1,0 +1,654 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+.encabezado {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.encabezado h2 {
+    color: white;
+}
+
+.segundo_encabezado {
+    padding: 25rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+/*    background-image: url(imagenes/collage1.png); */
+   background-position: center;
+    background-size: cover;
+
+}
+
+.segundo_encabezado h1, .segundo_encabezado {
+    color: rgb(13, 9, 9);
+     font-size: 5dvh;
+}
+
+/* Encabezado de linea de tiempo */
+
+
+.linea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vmax;
+}
+
+.linea h1 {
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*
+ Aca comienza la Linea de tiempo 
+ desde 0 añós
+*/
+
+.linea_tiempo {  /* caja padre */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+
+.libreria_cent {  /* Libreria para title */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.primera_seccion .imag_003 img { /*Primera image de 0 añós*/
+    height: 25rem;
+    width: auto;
+}
+
+
+/* Primera seccion en llinea de tiempo */
+
+.cajapadre {
+    background-color: #e8f0fe;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+}
+
+.caja1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.caja1 .subcaja2_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.subcaja2_2 .subcaja2_2_1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.subcaja2_2_1 .img1 img {
+    height: 40rem;
+    width: auto;
+    transition: all 0.03s;
+    border-radius: 25px;
+}
+
+.subcaja2_2_1 .img1 img:hover {
+    transform: scale(1.2);
+}
+
+
+
+.subcaja2_2_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: c;
+    height: 40rem;
+    text-align: center;
+ /*   padding: 25px;*/
+}
+
+.subcaja2_2_2 .bebe img {
+    height: 100px;
+    width: auto;
+}
+
+/* galeria de fotos, animaciones */
+
+.galeria_de_fotos {
+    display: flex;
+    width: 700px;
+    height: 530px;
+}
+
+.galeria_de_fotos img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.galeria_de_fotos img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* Posicionamiento de Cajas Galeria */
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.title_galeria {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    font-size: 50px;
+}
+
+.pie_galeria {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    border-radius: 50px;
+    padding: 25px;
+    background-color: #e8f0fe;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* adolencia */
+
+.card {
+    width: auto;
+    height: 100vh;
+    border-radius: 4px;
+    background: white ;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+}
+
+.card .p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: #ffffff;
+    border: 1px solid #9e9292;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .p:hover {
+    flex: 4;
+}
+
+.card .p .span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #bf8498;
+    letter-spacing: .1em;
+}
+
+.card .p:hover .span {
+    transform: rotate(0);
+}
+
+/* collage de pequeña */
+
+.contenedor {
+    display: grid;
+    margin: auto;
+/*    width: 100vh; */
+    height: 100vh;
+/*    max-width: 100%;*/
+/*    outline: 4px solid; */
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+
+.element {
+    color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+   /* font-size: 1.5rem;
+    font-weight: bold; */
+}
+
+
+.elemento1 {
+    background-color: white ;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    
+}
+
+.elemento1 h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    height: 100%;
+}
+
+    .anaglyph-text {
+    font-family: 'Roboto',
+}
+
+.elemento2 {
+    background-color: white;
+    grid-column: 2/6;
+    grid-row: 4/10;
+}
+
+.element img {
+    height: 100%;
+    width: auto;
+    border-radius: 25px;
+}
+
+.elemento3 { /* texto */
+       display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    font-size: 20px;
+
+    grid-column: 2/6;
+    grid-row: 10/12;
+    border-radius: 30px;
+}
+
+
+.elemento4 {
+    grid-column: 3/5;
+    grid-row: 4/5;
+
+    border-radius: 25px;
+}
+
+.elemento4 h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+
+    color: white;
+}
+
+.elemento5 {
+    grid-column: 9/12;
+    grid-row: 2/5;
+}
+ .elemento5 video {
+    height: 100%;
+    border-radius: 25px;
+ }
+
+ .elemento6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 9/12;
+    grid-row: 5/7;
+ }
+ 
+ .elemento6 {
+    font-size: 20px;
+    text-align: center;
+ }
+
+/* METAS */
+
+.metas {
+    padding: 100px;
+    background-color: white;
+
+}
+
+.caja_meta {  /*Caja padre */
+    display: grid;
+    margin: auto;
+    height: 40rem;
+    width: 60rem;
+   
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    
+}
+
+.meta1 {   /*Estilos de la primera caja*/
+    background-color: white;
+    grid-column: 2/12;
+    grid-row: 2/12;
+
+    outline: 2px solid;
+    border-radius: 25px;
+}
+
+    /*contenido de la caja1*/
+
+
+.contenido_meta {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    text-align: center;
+}
+
+.meta2 {
+    background-color: white;
+    grid-column: 2/12;
+    grid-row: 14/24;
+
+    outline: 2px solid;
+    border-radius: 25px;
+}
+
+.meta3 {
+    background-color: white;
+    grid-column: 14/24;
+    grid-row: 2/24;
+}
+
+.contenido_meta3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    text-align: center;
+    outline: 2px solid;
+    border-radius: 25px;
+}
+
+
+/* estilos pasatiempos */
+
+ .pasatiempo {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+ }
+
+ .pasa_enca {
+    background-color: #bf8498;
+    display: flex;
+    grid-column: 2/5;
+    grid-row: 2/3;
+
+    justify-content: center;
+    align-items: center;
+ }
+
+ .pasa_con {
+    display: grid;
+    background-color: aliceblue;
+    grid-column: 2/5;
+    grid-row: 3/6;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+.pasa_imag {
+    background-color: #bf8498;
+    display: grid;
+    grid-column: 8/11;
+    grid-row: 2/5;
+}
+
+ .pasa_imag img {
+    height: 100%;
+    width: 100%;
+ }
+
+
+
+
+
+ /* estilos deportes */
+
+#deportes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.deporte {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deporte img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.deporte:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#deportes {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.deporte {
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.deporte img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.deporte:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* cosas que me gusta y no */
+
+/* Estilos generales para las secciones */
+#gustos, #disgustos {
+  padding: 20px;
+  background: linear-gradient(135deg, #e0e0e0, #b0b0b0); /* Degradado de gris claro a gris oscuro */
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Estilos para el contenido dentro de las secciones */
+#gustos .contenido, #disgustos .contenido {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Estilos para las imágenes */
+#gustos .contenido img, #disgustos .contenido img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el cursor sobre las imágenes */
+#gustos .contenido img:hover, #disgustos .contenido img:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para los párrafos */
+#gustos .contenido p, #disgustos .contenido p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* a quienes admiro */
+#personas-admiradas {
+  padding: 20px;
+  background-color: #f0f0f0; /* Fondo gris claro */
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.contenedor-personas {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.persona {
+  background-color: #d3d3d3; /* Fondo gris para cada contenedor */
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.persona:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.persona img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.persona h3 {
+  margin-top: 15px;
+  color: #333;
+}
+
+.persona a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0077b5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.persona a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* pie de paginas */
+
+
+footer {
+  background: linear-gradient(to right, #ffffff, #f0f0f0);
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info, .footer-links, .footer-icon {
+  margin: 10px;
+  text-align: center;
+}
+
+.footer-info h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.footer-links a {
+  color: #0077b5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
